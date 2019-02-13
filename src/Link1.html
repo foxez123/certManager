@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Pete's Pet Shop</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <h3 class="text-left">Certificate Manager - 1. Register Certificate Type by Issuer</h3>
+          <h5>
+            <a href="./Link1.html">1. Register Certificate Type by Issuer</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./Link2.html">2. View Certificate Type by Issuer</a> <br>
+            <a href="./Link3.html">3. Register Personal Certificate by Student</a> &nbsp;&nbsp;
+            <a href="./Link4.html">4. View & Confirm Personal Certificate by Issuer</a> <br>
+            <a href="./Link5.html">5. Register Certificate Token by Student</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./Link6.html">6. View Certificate by Company using Token</a>
+          </h5>
+
+          <br/>
+        </div>
+      </div>
+
+      <div class="row">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="certTypeId" class="col-sm-2 control-label">Certificate Type Id</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="certTypeId" placeholder="Certificate Type Id">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="certTypeNm" class="col-sm-2 control-label">Certificate Type Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="certTypeNm" placeholder="Certificate Type Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="issuerNm" class="col-sm-2 control-label">Issuer Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="issuerNm" placeholder="Issuer Name">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="descUrl" class="col-sm-2 control-label">Description URL</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="descUrl" placeholder="Description URL">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button class="btn btn-primary btn-link1" type="button" data-id="0">Register Certificate Type</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="row">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button class="btn btn-info btn-link1-s1" type="button" data-id="0" onclick="App.setSample1('s0')">Clear sample</button>
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button class="btn btn-info btn-link1-s1" type="button" data-id="1" onclick="App.setSample1('s1')">Set sample1</button>[1. Consensys Issuer] "CT001", "Blockchain Proficiency", "Consensys Academy", "https://consensys.net/academy/"
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button class="btn btn-info btn-link1-s2" type="button" data-id="2" onclick="App.setSample1('s2')">Set sample2</button>[2. AWS Issuer] "CT002", "AWS Cloud Certification", "AWS", "https://aws.amazon.com/certification/?nc1=h_ls"
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+             <button class="btn btn-info btn-link1-s3" type="button" data-id="3" onclick="App.setSample1('s3')">Set sample3</button>[2. AWS Issuer] "CT003", "AWS CA Certificate", "AWS", "https://aws.amazon.com/certification/?nc1=h_ls"
+            </div>
+          </div>
+        </form>
+      </div>
+<!--
+      <div class="row justify-content-center">
+        <div class="left_box col-md-15" style="padding-left: 4rem;">
+          <div class="col-sm-2 control-label">Challenger List</div>
+          <table id="challenger_list" class="table table-bordered">
+            <thead>
+            <tr>
+              <th>Address</th>
+              <th>Name</th>
+              <th>Deposit(Ether)</th>
+              <th>Complete Status</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+          </table>
+        </div>
+    </div> <!-- /container -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/cert.js"></script>
+  </body>
+</html>
